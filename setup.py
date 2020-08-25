@@ -21,6 +21,5 @@ setup(
     install_requires=['numpy'],
     url='https://github.com/yusukeMuraki/color_plot',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=['color_plot', 'colorplot']
 )
-
