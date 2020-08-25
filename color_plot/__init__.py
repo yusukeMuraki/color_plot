@@ -1,1 +1,1 @@
-from .core import hmm
+from .core import color_plot
