@@ -5,20 +5,20 @@
 from setuptools import setup, find_packages
 
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='colorplot',
+    name='color_plot',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='plot color map from city data',
     long_description=readme,
     author='Yusuke Muraki',
     author_email='',
-    install_requires=['numpy'],
+    install_requires=['numpy', 'shapefile', 'matplotlib', 'geopanads'],
     url='https://github.com/yusukeMuraki/color_plot',
     license=license,
     packages=['color_plot']
