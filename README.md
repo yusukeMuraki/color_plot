@@ -32,9 +32,9 @@
 ```
 import color_plot
 
-shape_file_name = '/Users/murakiyusuke/coding/data/A002005212015DDSWC25201/h27ka25201.shp'
-data_file_name = '/Users/murakiyusuke/coding/data/大津市人口データ.xlsx'
-column = '世帯数H31' # plotするデータのカラム名
+shape_file_name = '/path/to/file/data.shp'
+data_file_name = '/path/to/file/data.xlsx'
+column = 'データ1' # plotするデータのカラム名
 
 color_plot.color_plot(shape_file_name, data_file_name, column)
 ```
