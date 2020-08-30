@@ -30,11 +30,11 @@
 ## サンプルコード
 
 ```
-import color_plot
+from color_plot.core import color_plot
 
 shape_file_name = '/path/to/file/data.shp'
 data_file_name = '/path/to/file/data.xlsx'
 column = 'データ1' # plotするデータのカラム名
 
-color_plot.color_plot(shape_file_name, data_file_name, column)
+color_plot(shape_file_name, data_file_name, column)
 ```

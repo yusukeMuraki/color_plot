@@ -13,11 +13,11 @@ with open('LICENSE') as f:
 
 setup(
     name='color_plot',
-    version='0.1.2',
+    version='0.1.5',
     description="colorplot",
     author='Yusuke Muraki',
     author_email='',
-    install_requires=['numpy', 'pyshp', 'matplotlib', 'geopandas', 'os'],
+    install_requires=['numpy', 'pyshp', 'matplotlib', 'geopandas'],
     url='https://github.com/yusukeMuraki/color_plot',
     license=license,
     packages=['color_plot']
