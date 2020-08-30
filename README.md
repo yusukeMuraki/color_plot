@@ -1,10 +1,40 @@
-Sample Module Repository
-========================
+# color-plot
 
-This simple project is an example repo for Python projects.
+## インストール
 
-`Learn more <http://www.kennethreitz.org/essays/repository-structure-and-python>`_.
+`pip install color-plot`
 
----------------
+## データの準備
 
-If you want to learn more about ``setup.py`` files, check out `this repository <https://github.com/kennethreitz/setup.py>`_.
+用意するもの
+- 町丁目shapeファイル
+- 表示する統計データ
+
+#### 町丁目shapeファイル
+
+[こちら](https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2015&serveyId=A002005212015&coordsys=1&format=shape)から目的の区域のシェイプファイルをダウンロード
+
+#### 統計データ
+以下の形式でデータを用意
+
+(必須)`町丁目名`
+| 町丁目名 | データ1 | データ2・・・ |
+|:-----------|------------|:------------|
+| 本町一丁目       | 23       | 3         |
+| 本町二丁目   | 45      | 2       |
+|  三月町      | 12        | 1         |
+|    立花町     | 33          | 4           |
+
+
+
+## サンプルコード
+
+```
+import color_plot
+
+shape_file_name = '/Users/murakiyusuke/coding/data/A002005212015DDSWC25201/h27ka25201.shp'
+data_file_name = '/Users/murakiyusuke/coding/data/大津市人口データ.xlsx'
+column = '世帯数H31' # plotするデータのカラム名
+
+color_plot.color_plot(shape_file_name, data_file_name, column)
+```

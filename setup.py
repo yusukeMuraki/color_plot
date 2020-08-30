@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 
 
-with open('README.md') as f:
+with open('README.md', 'r') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
@@ -13,12 +13,11 @@ with open('LICENSE') as f:
 
 setup(
     name='color_plot',
-    version='0.1.0',
-    description='plot color map from city data',
-    long_description=readme,
+    version='0.1.2',
+    description="colorplot",
     author='Yusuke Muraki',
     author_email='',
-    install_requires=['numpy', 'shapefile', 'matplotlib', 'geopanads'],
+    install_requires=['numpy', 'pyshp', 'matplotlib', 'geopandas', 'os'],
     url='https://github.com/yusukeMuraki/color_plot',
     license=license,
     packages=['color_plot']
