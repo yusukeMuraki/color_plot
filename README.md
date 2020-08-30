@@ -15,9 +15,9 @@
 [こちら](https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2015&serveyId=A002005212015&coordsys=1&format=shape)から目的の区域のシェイプファイルをダウンロード
 
 #### 統計データ
-以下の形式でデータを用意
+以下の形でデータを用意(.csv or .xlsx)
 
-(必須)`町丁目名`
+(※必須)`町丁目名`
 | 町丁目名 | データ1 | データ2・・・ |
 |:-----------|------------|:------------|
 | 本町一丁目       | 23       | 3         |
